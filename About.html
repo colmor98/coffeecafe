@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<title>CoffeeCaf&egrave-About</title>
+	<head>
+		<style>
+			body {
+			   background-color: rgb(34,34,34);  
+			   color: #009933;
+			   font: 15px/1.4em ;
+			}
+			h2
+			{
+			text-align:center;
+			font-variant:small-caps;
+			}
+			h3
+			{
+			font-size:20px;
+			text-align:center;
+			color:#009933;
+			}
+			p
+			{
+			text-align: center;
+			text-font:arial;
+			font-size:20px;
+			}
+			#manimg
+			{
+			float:right;
+			padding:40px;
+			}
+			#womanimg
+			{
+			float:left;
+			padding:40px;
+			
+			}
+			footer
+			{
+				background-color:rgb(34, 34, 34);
+				color:#009933;
+				clear:both;
+				text-align:center;
+				padding:5px;
+			}
+			
+			nav {
+				background-color: rgb(34,34,34);
+				border: 2px solid #dedede;
+				border-radius: 4px;
+				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+				color: #888;
+				display: block;
+				margin: 8px 22px 8px 22px;
+				overflow: hidden;
+				width: 90%; 
+			}
+
+			nav ul {
+				margin: 0;
+				padding: 0;
+			}
+
+				nav ul li {
+					display: inline-block;
+					list-style-type: none;
+					
+					-webkit-transition: all 0.2s;
+					-moz-transition: all 0.2s;
+					-ms-transition: all 0.2s;
+					-o-transition: all 0.2s;
+					transition: all 0.2s; 
+				}
+				
+					nav > ul > li > a {
+						color: #aaa;
+						display: block;
+						line-height: 56px;
+						padding: 0 24px;
+						text-decoration: none;
+					}
+
+			nav > ul > li > a > .caret {
+				border-top: 4px solid #000000;
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+				content: "";
+				display: inline-block;
+				height: 0;
+				width: 0;
+				vertical-align: middle;
+				
+				-webkit-transition: color 0.1s linear;
+				-moz-transition: color 0.1s linear;
+				-o-transition: color 0.1s linear;
+				  transition: color 0.1s linear; 
+			}
+
+			nav > ul > li:hover {
+					  background-color: rgb( 40, 44, 47 );
+					}
+
+					nav > ul > li:hover > a {
+					  color: rgb( 255, 255, 255 );
+					}
+
+					nav > ul > li:hover > a > .caret {
+					  border-top-color: rgb( 255, 255, 255 );
+					}
+				
+			nav > ul > li > div {
+				background-color: rgb( 40, 44, 47 );
+				border-top: 0;
+				border-radius: 0 0 4px 4px;
+				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+				display: none;
+				margin: 0;
+				opacity: 0;
+				position: absolute;
+				width: 165px;
+				visibility: hidden;
+				z-index: 100;
+				
+				-webkit-transiton: opacity 0.2s;
+				-moz-transition: opacity 0.2s;
+				-ms-transition: opacity 0.2s;
+				-o-transition: opacity 0.2s;
+				-transition: opacity 0.2s;
+			}
+
+				nav > ul > li > div ul > li {
+					display: block;
+				}
+				
+					nav > ul > li > div ul > li > a {
+						color: #fff;
+						display: block;
+						padding: 12px 24px;
+						text-decoration: none;
+					}
+				
+				nav > ul > li > div ul > li:hover > a {
+					background-color: rgba( 255, 255, 255, 0.1);
+				}
+				
+			nav > ul > li:hover > div {
+				display: block;
+				opacity: 1;
+				visibility: visible;
+			}
+			#menu
+			{
+			position:fixed;
+			top:0px;
+			width:40%;
+			}
+			#map {
+			width: 500px;
+			height: 400px;
+			margin-left:auto;
+			margin-right:auto;
+			z-index:1;
+			}
+			table
+			{
+			border-collapse:collapse;
+			padding:3px;
+			z-index:1;
+			}
+			table,td,th
+			{
+			border:2px solid white;
+			}
+			
+		
+		</style>
+	
+	<div id="menu">			
+<nav>
+	<ul>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html">Home</a></li>
+		<li>
+			<a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html">Menu <span class="caret"></span></a>
+			<div>
+				<ul>
+				<li><strong>Our Specials:</strong><hr></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#coffee">Coffee</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#espresso">Espresso Bar</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#smoothies">Smoothies</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#green">Green Tea</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#black">Black Tea</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#other">Other Teas</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#snack">Snack Bar</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/membership.html">Membership</a></li>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/about.html">About Us</a></li>
+	</ul>
+</nav>
+</div>
+
+	
+	<h2>Coffee Caf&egrave </h2>
+	<h2>About Us</h2>
+	
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(53.3293611, -6.2297879),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	
+	<hr>
+	</head>
+	<body>
+	<br><br><br>
+	<div id="manimg">
+		<img src="https://gunwel.files.wordpress.com/2011/03/stephen_barista.gif" height="300px" width="200px">
+	</div>
+	<div id="womanimg">
+		<img src="http://photos1.blogger.com/blogger/1472/939/1600/karlyn_barista.gif" height="300px" width="200px">
+	</div>
+	<p>
+		We are a small coffee shop located in Ballsbridge, Co. Dublin. <br />
+		We are gradually expanding and have launched our new website. <br />
+		Our Coffee Caf&egrave family is expanding at an excellent rate and <br />
+		is currently recruting. We see all of our workers as family members <br >
+		because our Caf&egrave originally began as a small family <br />
+		business. With currently 6 full-time baristas, one head waiter, <br />
+		one hostess, and 3 waiters, we are looking for new staff to work <br />
+		in our new caf&egrave in Swords. You can find contact details for <br/>
+		our caf&egrave in the 'Contact Us' section of our website directly below, or else<br />
+		call into our caf&egrave and ask for Colm, our manager.
+	</p><hr><br><br>
+	
+	<h2>Contact Us</h2>
+	<table align="center">
+		<tr>
+			<th><h3>Call us on</th> 
+			<td><h3>083 45 80 567</td> 
+		</tr>
+		<tr>
+			<th><h3>Email<h3></th>
+			<td><h3>coffeecaf&egrave@gmail.com</h3></td>
+		</tr>
+	</table><br>
+	<div id="map"></div><br>
+	
+	</body>
+	
+<footer>
+	Copyright &copy CoffeeCaf&egrave.com 
+</footer>
+</html>

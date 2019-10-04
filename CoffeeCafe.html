@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<title>CoffeeCaf&egrave </title>
+		<head>
+		<style>
+			body {
+			   background-color: rgb(34,34,34);  
+			   color: #666666;
+			   font: 15px/1.4em Arial,sans-serif;
+			}
+			
+			#headerimg
+			{
+			position:absolute;
+			left:380px;
+			top:20px;
+			z-index:1;
+			}
+			#menuimg
+			{
+			position:relative;
+			}
+			background
+			{
+			color:#000000;
+			}
+				header
+				{
+				background-color:rgb(34, 34, 34);
+				color: #fff;
+				text-align:left;
+				padding:5px;
+				}
+				h1
+				{
+					text-align: center;
+					color: #009933;
+					font-size: 40px;
+					font-style: oblique;
+					font-variant: small-caps;
+				}
+				section
+				{
+				background-color:rgb(34,34,34);
+				color:white;
+				clear:both;
+				text-align:center;
+				padding: 0px;
+				font-family:sans-sarif;
+				margin-top:0;
+				}
+				li
+				{
+				list-style:none;
+				list-style-type:none;
+				list-style-position: initial;
+				list-style-image: initial;
+				display: list-item;
+				}
+				ul
+				{
+				display:block;
+				}
+				p
+				{
+				display:block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				margin-top:0;
+				margin-bottom:2.5rem;
+				}
+				h2
+				{ 
+				color:#009933;
+				text-align:center;
+				}
+				footer
+				{
+				background-color:rgb(34, 34, 34);
+				color:#009933;
+				clear:both;
+				text-align:center;
+				padding:5px;
+				}
+				
+				
+				body {
+					background-color: rgb(34,34,34);
+					font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+					font-weight: 300;
+					font-size: 15px;
+					}
+
+				nav {
+					background-color: rgb(34,34,34);
+					border: 2px solid #dedede;
+					border-radius: 4px;
+					box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+					color: #888;
+					display: block;
+					margin: 8px 22px 8px 22px;
+					overflow: hidden;
+					width: 90%; 
+				}
+
+				nav ul {
+					margin: 0;
+					padding: 0;
+				}
+
+					nav ul li {
+						display: inline-block;
+						list-style-type: none;
+						
+						-webkit-transition: all 0.2s;
+						-moz-transition: all 0.2s;
+						-ms-transition: all 0.2s;
+						-o-transition: all 0.2s;
+						transition: all 0.2s; 
+					}
+					
+						nav > ul > li > a {
+							color: #aaa;
+							display: block;
+							line-height: 56px;
+							padding: 0 24px;
+							text-decoration: none;
+						}
+
+				nav > ul > li > a > .caret {
+					border-top: 4px solid #000000;
+					border-right: 4px solid transparent;
+					border-left: 4px solid transparent;
+					content: "";
+					display: inline-block;
+					height: 0;
+					width: 0;
+					vertical-align: middle;
+					
+					-webkit-transition: color 0.1s linear;
+					-moz-transition: color 0.1s linear;
+					-o-transition: color 0.1s linear;
+					  transition: color 0.1s linear; 
+				}
+
+				nav > ul > li:hover {
+						  background-color: rgb( 40, 44, 47 );
+						}
+
+						nav > ul > li:hover > a {
+						  color: rgb( 255, 255, 255 );
+						}
+
+						nav > ul > li:hover > a > .caret {
+						  border-top-color: rgb( 255, 255, 255 );
+						}
+					
+				nav > ul > li > div {
+					background-color: rgb( 40, 44, 47 );
+					border-top: 0;
+					border-radius: 0 0 4px 4px;
+					box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+					display: none;
+					margin: 0;
+					opacity: 0;
+					position: absolute;
+					width: 165px;
+					visibility: hidden;
+					z-index: 100;
+					
+					-webkit-transiton: opacity 0.2s;
+					-moz-transition: opacity 0.2s;
+					-ms-transition: opacity 0.2s;
+					-o-transition: opacity 0.2s;
+					-transition: opacity 0.2s;
+				}
+
+					nav > ul > li > div ul > li {
+						display: block;
+					}
+					
+						nav > ul > li > div ul > li > a {
+							color: #fff;
+							display: block;
+							padding: 12px 24px;
+							text-decoration: none;
+						}
+					
+					nav > ul > li > div ul > li:hover > a {
+						background-color: rgba( 255, 255, 255, 0.1);
+					}
+					
+				nav > ul > li:hover > div {
+					display: block;
+					opacity: 1;
+					visibility: visible;
+				}
+				#menu
+				{
+				position:fixed;
+				top:0px;
+				width:40%;
+				}
+
+			</style>
+<div id="menu">			
+<nav>
+	<ul>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html">Home</a></li>
+		<li>
+			<a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html">Menu <span class="caret"></span></a>
+			<div>
+				<ul>
+				<li><strong>Our Specials:</strong><hr></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#coffee">Coffee</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#espresso">Espresso Bar</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#smoothies">Smoothies</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#green">Green Tea</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#black">Black Tea</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#other">Other Teas</a></li>
+					<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/CoffeeCafe.html#snack">Snack Bar</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/membership.html">Membership</a></li>
+		<li><a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723/about.html">About Us</a></li>
+	</ul>
+</nav>
+</div>
+
+		</head>
+	<body>
+<header>
+	<h1><div class="headerimg">
+		<img src="http://www.bioproeverij.nl/wp-content/uploads/2014/09/103797-3d-glossy-green-orb-icon-food-beverage-coffee-tea1-225x225.png" width="200" height="200">
+		</div>
+	<a href="file:///C:/Users/Colm%20O'Reilly/Google%20Drive/Web%20Development/CA/C15502723CoffeeCafe.html" style="color:#009933"><br><br>Coffee Caf&egrave </a></h1>
+	
+	
+</header>
+<section>
+		
+		
+	
+	<h2>Whats On The Menu?</h2>
+		<div class="Menuimg">
+			<img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_8_imagecache/coffee-product-images/bcat3.jpg" height="550px" width="900px">
+			</div>
+		<br><h2><a name="coffee">Caf&egrave Menu & Tea List</a></h2>
+		<div style="width:40%;padding:0 10px 0 0;float:left;">
+		
+		<h2>Coffee</h2>
+		<ul>
+			<li>
+				<strong>Regular Brew</strong>
+				<p>Traditional drip brewed coffee traceable back to the farm through the batch number of the roast.
+				</p>
+			</li>
+			<li>
+				<strong>Cold Brew</strong>
+				<p>Cold water extracted for 8-16 hours creating an iced coffee with a full-bodied, aromatic flavor profile that translates into a bold, super-smooth taste with reduced acidity.
+				</p>
+			</li>
+			<li>
+				<strong>Americano</strong>
+				<p>Prepared with espresso and hot water, creating a similar strength to drip brew but with the flavor profile of espresso.
+				</p>
+			</li>
+			<li>
+				<strong>Red Eye</strong>
+				<p>Drip brewed coffee with a single shot of espresso.
+				</p>
+			</li>
+			<li>
+				<strong>French Press</strong>
+				<p>Simple immersion brewing that creates a bold full-bodied flavor, exposing all the traits of a coffee. (Serves 2 - 5)
+				</p>
+			</li>
+			<li>
+				<strong>Chemex</strong>
+				<p>Pour-over brewing that creates a clean and crisp brew with little bitterness. (Serves 2 - 4)
+				</p>
+			</li>
+			<li>
+				<strong>Clever<strong>
+				<p>Mix of pour-over and immersion brewing methods capturing the full-bodied flavor of immersions and the clean crisp taste of pour overs. (Serves 1 - 2)
+				</p>
+			</li>
+		</ul>
+		<img src="http://thebodydepartment.com/wp-content/uploads/2015/04/82e93946-b08c-4233-9ae8-47722576a695.jpg" width="400px" height="350px">
+		<h2><a name="smoothies">Smoothies</a></h2>
+		<ul>
+			<li>
+				<strong>Frozen Latte</strong>
+				<p>Caf&egrave latte over ice with espresso, milk and hints of vanilla blended smooth and topped with whipped cream.
+				</p>
+			</li>
+			<li>
+				<strong>Frozen Mocha</strong>
+				<p>Caf&egrave mocha over ice with espresso, milk and chocolate blended smooth and topped with whipped cream.
+				</p>
+			</li>
+			<li>
+				<strong>Fruit Smoothie</strong>
+				<p>Available in mango, peach and strawberry-banana. Free from high fructose corn syrup and artificial colours(Vegan).
+				</p>
+			</li>
+		</ul>
+		<img src="http://www.rivertea.com/1264/granny-s-cake-spicy-chocolate-black-tea.jpg" height="350px" width="400px">
+		<h2><a name="black">Black Tea</a></h2>
+		<ul>
+			<li>
+				<strong>Bard's Tempest</strong>
+				<p>Excellent breakfast tea made with a blend of Ceylon & china black teas. Organic and Fair Trade Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Assam</h2>
+				<p>Grown in N. Eastern India, this single estate tea is robust, hearty & malty. Organic and Fair Trade Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Darjeeling</strong>
+				<p>This is a second flush Darjeeling tea grown high in the foothills of the Himalayas on the famous Biodynamic Makaibari Estate. Organic and Fair Trade Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Yunnan</strong>
+				<p>Full-bodied & robust with a choclaty end note. Grown in Yunnan China, long considered one of the finest varietals.
+				</p>
+			</li>
+			<li>
+				<strong>Mademoiselle Grey</strong>
+				<p>A classic earl grey (black tea with bergamot) blended with rose petals. Fair Trade Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Buccaneer</strong>
+				<p>Coconut, chocolate, vanilla, organic rooibos, organic black tea. Contains trade amounts of sugar & dairy. Fair Trade Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Cha Cha Chai</strong>
+				<p>Award winning blend of cinnamon, cloves, cardamom, ginger, pepper & black teas. Organic and Fair Trade Certified.
+				</p>
+			</li>
+			<img src="http://2.bp.blogspot.com/-7d8UhZ6Kw_k/T7h6E_z9fZI/AAAAAAAACBM/XmWJYDP3jtw/s640/choc6.jpg" height="300px" width="400px">
+			<h2><a name="snack">Snack Bar</a></h2>
+		<ul>
+			<li>
+				<p>Buckwheat Chocolate Walnut Brownie<br />
+					Jowar Banana Cake with Salted Caramel Sauce<br />
+					Hot Cross Buns<br />
+					Snow-Capped Fudge Cookies<br />
+					All American Carrot Cake<br />
+					Double Chocolate Chip Cookies<br />
+					Oatmeal And Raisin Cookies
+				</p>
+			</li>
+		<ul>
+		</ul>
+		</div>
+		
+		
+		<div style="width:40%;padding:0 10px 0 0;float:right;">
+
+		<h2><a name="espresso">Espresso Bar</a></h2>
+		<ul>
+			<li>
+				<strong>Espresso</strong>
+				<p>Water forced through finely ground coffee at high pressure, extracting many coffee notes otherwise undetected.
+				</p>
+			</li>
+			<li>
+				<strong>Caf&egrave Latte</strong>
+				<p>Espresso painted with velvety foamed textured milk.
+				</p>
+			</li>
+			<li>
+				<strong>Vanilla/Caramel Latte</strong>
+				<p>Your classic latte with hints of vanilla or caramel syrup. Ask your barista about other available syrups.
+				</p>
+			</li>
+			<li>
+				<strong>Cappuccino</strong>
+				<p>Espresso with foamed milk. Similar to a latte but with less milk and more foam. Can be made normal, wet or dry.
+				</p>
+			</li>
+			<li>
+				<strong>Caf&egrave Mocha</strong>
+				<p>Espresso, textured milk and rich chocolate. Can be made with white chocolate or mixed(marbled).
+				</p>
+			</li>
+			<li>
+				<strong>Espresso Machiato</strong>
+				<p>Double shot espresso stained with a touch of textured milk.
+				</p>
+			</li>
+			<li>
+				<strong>Latte Machiato</strong>
+				<p>Textured milk stained with a shot of espresso
+				</p>
+			</li>
+			<li>
+				<strong>Cortado</strong>
+				<p>Double shot espresso cut with textured milk. Think latte but with much less milk and prominent espresso.
+				</p>
+			</li>
+			<li>
+				<strong>Chai Tea Latte</strong>
+				<p>Textured milk with spiced chai tea.
+				</p>
+			</li>
+			<li>
+				<strong>Hot Chocolate</strong>
+				<p>Rich chocolate prepared with silky foamed textured milk.
+				</p>
+			</li>
+			<li>
+				<strong>Steamer</strong>
+				<p>Silky textured foamed milk. Perfect for the kids. Add optional Syrup for an additional sweet touch.
+				</p>
+			</li>
+				<img src="http://ecis2015.eu/files/tow/1_0.jpg" height="400px" width="400px">
+		</ul>
+		<h2><a name="green">Green Tea</a></h2>
+		<ul>
+			<li>
+				<strong>Fiji</strong>
+				<p>Papaya, pineapple & organic china green tea. Brews an award winning iced tea. Organic Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Passion & Envy</strong>
+				<p>Passion fruit & organic tea creates an evocative and sophisticated cup. Organic Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Hojicha</strong>
+				<p>Roasted green bancha. A crisp & nutty taste, light & refreshing, accompanies meals perfectly.
+				</p>
+			</li>
+			<li>
+				<strong>Organic China Green</strong>
+				<p>Classic refreshing green tea from Zhejiang Province. Crisp, grassy notes. Organic Certified.
+				</p>
+			</li>
+		</ul>
+		<img src="http://authoritynutrition.com/wp-content/uploads/2013/09/a-cup-of-green-tea.jpg" height="300px" width="350px">
+		<h2><a name="other">Other Teas</a></h2>
+		<ul>
+			<li>
+				<strong>Pouchong, Oolong, White Tea, Yerba Mate and More</strong>
+				<hr>
+				<strong>Iron Goddess of Mercy</strong>
+				<p>Curled leaf tea from Fujian. Tender peachy notes intermingle with nutty overtones. Oolong tea, medium oxidation.
+				</p>
+			</li>
+			<li>
+				<strong>Jasmine Yin Hao</strong>
+				<p>A traditional jasmine scented pouchong, slightly less oxidized than oolong. Melodic coupling of fragrant petals & light, sweet tea produce a palate for romance. Organic Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Pai Mu Tan</strong>
+				<p>This white tea is smooth & flowery with a hint of earthiness. Organic Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Yerba Mate</strong>
+				<p>South American herb, intense, grassy & highly stimulating. Contains matteine, similar to caffeine. Organic Certified.
+				</p>
+			</li>
+			<li>
+				<strong>Coffee Cherry</strong>
+				<p>The dried cherry and husk from the fruit of the coffee tree. Sweet and pleasant. Trace amounts of caffeine.
+				</p>
+			</li>
+		</ul>
+		<img src="http://shop.samovartea.com/v/vspfiles/photos/0301MOPI-2.jpg" height="350px" width="270px">
+			
+		</div>
+		
+</section>
+<footer>
+	Copyright &copy CoffeeCaf&egrave.com 
+</footer>
+</html>
